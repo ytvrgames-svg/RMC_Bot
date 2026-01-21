@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54CC53BE-55E6-3C59-A0D6-A72DB40529D4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opus</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opus.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opus</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opus.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opus</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">opus.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">opus</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opus.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opus</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44244 /w44305 /w44267</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OPUS_BUILD;ENABLE_HARDENING;DISABLE_DEBUG_FLOAT;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX2;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";opus_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OPUS_BUILD;ENABLE_HARDENING;DISABLE_DEBUG_FLOAT;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX2;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";opus_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/Codes/discord bot(Leo)/opus-1.5.2/build/Debug/opus.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/Codes/discord bot(Leo)/opus-1.5.2/build/Debug/opus.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>0.10</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44244 /w44305 /w44267</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;DISABLE_DEBUG_FLOAT;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX2;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";opus_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;DISABLE_DEBUG_FLOAT;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX2;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";opus_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/Codes/discord bot(Leo)/opus-1.5.2/build/Release/opus.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/Codes/discord bot(Leo)/opus-1.5.2/build/Release/opus.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>0.10</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44244 /w44305 /w44267</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;DISABLE_DEBUG_FLOAT;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX2;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";opus_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;DISABLE_DEBUG_FLOAT;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX2;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";opus_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/Codes/discord bot(Leo)/opus-1.5.2/build/MinSizeRel/opus.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/Codes/discord bot(Leo)/opus-1.5.2/build/MinSizeRel/opus.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>0.10</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44244 /w44305 /w44267</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;DISABLE_DEBUG_FLOAT;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX2;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";opus_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPUS_BUILD;ENABLE_HARDENING;DISABLE_DEBUG_FLOAT;USE_ALLOCA;DLL_EXPORT;OPUS_HAVE_RTCD;OPUS_X86_MAY_HAVE_SSE;OPUS_X86_PRESUME_SSE;OPUS_X86_MAY_HAVE_SSE2;OPUS_X86_PRESUME_SSE2;OPUS_X86_MAY_HAVE_SSE4_1;OPUS_X86_MAY_HAVE_AVX2;HAVE_LRINT;HAVE_LRINTF;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";opus_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Codes\discord bot(Leo)\opus-1.5.2\include;E:\Codes\discord bot(Leo)\opus-1.5.2\build;E:\Codes\discord bot(Leo)\opus-1.5.2;E:\Codes\discord bot(Leo)\opus-1.5.2\dnn;E:\Codes\discord bot(Leo)\opus-1.5.2\celt;E:\Codes\discord bot(Leo)\opus-1.5.2\silk;E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/Codes/discord bot(Leo)/opus-1.5.2/build/RelWithDebInfo/opus.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/Codes/discord bot(Leo)/opus-1.5.2/build/RelWithDebInfo/opus.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>0.10</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Codes\discord bot(Leo)\opus-1.5.2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Codes/discord bot(Leo)/opus-1.5.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\Codes\bin\cmake.exe "-SE:/Codes/discord bot(Leo)/opus-1.5.2" "-BE:/Codes/discord bot(Leo)/opus-1.5.2/build" --check-stamp-file "E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeCCompiler.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeRCCompiler.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeSystem.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\CFeatureCheck.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusBuildtype.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusConfig.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusConfig.cmake.in;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusFunctions.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusPackageVersion.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusSources.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\config.h.cmake.in;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\vla.c;E:\Codes\discord bot(Leo)\opus-1.5.2\opus.pc.in;E:\Codes\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeCCompiler.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeCCompilerABI.c;E:\Codes\share\cmake-4.2\Modules\CMakeCInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDependentOption.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;E:\Codes\share\cmake-4.2\Modules\CMakePushCheckState.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeRCInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeSystem.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CPack.cmake;E:\Codes\share\cmake-4.2\Modules\CPackComponent.cmake;E:\Codes\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;E:\Codes\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;E:\Codes\share\cmake-4.2\Modules\CheckIncludeFile.cmake;E:\Codes\share\cmake-4.2\Modules\CheckLibraryExists.cmake;E:\Codes\share\cmake-4.2\Modules\CheckSymbolExists.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;E:\Codes\share\cmake-4.2\Modules\FeatureSummary.cmake;E:\Codes\share\cmake-4.2\Modules\FindGit.cmake;E:\Codes\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;E:\Codes\share\cmake-4.2\Modules\FindPackageMessage.cmake;E:\Codes\share\cmake-4.2\Modules\GNUInstallDirs.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeInspectCLinker.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;E:\Codes\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Linker\MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;E:\Codes\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;E:\Codes\share\cmake-4.2\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Codes/discord bot(Leo)/opus-1.5.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\Codes\bin\cmake.exe "-SE:/Codes/discord bot(Leo)/opus-1.5.2" "-BE:/Codes/discord bot(Leo)/opus-1.5.2/build" --check-stamp-file "E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeCCompiler.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeRCCompiler.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeSystem.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\CFeatureCheck.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusBuildtype.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusConfig.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusConfig.cmake.in;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusFunctions.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusPackageVersion.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusSources.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\config.h.cmake.in;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\vla.c;E:\Codes\discord bot(Leo)\opus-1.5.2\opus.pc.in;E:\Codes\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeCCompiler.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeCCompilerABI.c;E:\Codes\share\cmake-4.2\Modules\CMakeCInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDependentOption.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;E:\Codes\share\cmake-4.2\Modules\CMakePushCheckState.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeRCInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeSystem.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CPack.cmake;E:\Codes\share\cmake-4.2\Modules\CPackComponent.cmake;E:\Codes\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;E:\Codes\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;E:\Codes\share\cmake-4.2\Modules\CheckIncludeFile.cmake;E:\Codes\share\cmake-4.2\Modules\CheckLibraryExists.cmake;E:\Codes\share\cmake-4.2\Modules\CheckSymbolExists.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;E:\Codes\share\cmake-4.2\Modules\FeatureSummary.cmake;E:\Codes\share\cmake-4.2\Modules\FindGit.cmake;E:\Codes\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;E:\Codes\share\cmake-4.2\Modules\FindPackageMessage.cmake;E:\Codes\share\cmake-4.2\Modules\GNUInstallDirs.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeInspectCLinker.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;E:\Codes\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Linker\MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;E:\Codes\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;E:\Codes\share\cmake-4.2\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Codes/discord bot(Leo)/opus-1.5.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\Codes\bin\cmake.exe "-SE:/Codes/discord bot(Leo)/opus-1.5.2" "-BE:/Codes/discord bot(Leo)/opus-1.5.2/build" --check-stamp-file "E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeCCompiler.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeRCCompiler.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeSystem.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\CFeatureCheck.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusBuildtype.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusConfig.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusConfig.cmake.in;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusFunctions.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusPackageVersion.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusSources.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\config.h.cmake.in;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\vla.c;E:\Codes\discord bot(Leo)\opus-1.5.2\opus.pc.in;E:\Codes\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeCCompiler.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeCCompilerABI.c;E:\Codes\share\cmake-4.2\Modules\CMakeCInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDependentOption.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;E:\Codes\share\cmake-4.2\Modules\CMakePushCheckState.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeRCInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeSystem.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CPack.cmake;E:\Codes\share\cmake-4.2\Modules\CPackComponent.cmake;E:\Codes\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;E:\Codes\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;E:\Codes\share\cmake-4.2\Modules\CheckIncludeFile.cmake;E:\Codes\share\cmake-4.2\Modules\CheckLibraryExists.cmake;E:\Codes\share\cmake-4.2\Modules\CheckSymbolExists.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;E:\Codes\share\cmake-4.2\Modules\FeatureSummary.cmake;E:\Codes\share\cmake-4.2\Modules\FindGit.cmake;E:\Codes\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;E:\Codes\share\cmake-4.2\Modules\FindPackageMessage.cmake;E:\Codes\share\cmake-4.2\Modules\GNUInstallDirs.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeInspectCLinker.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;E:\Codes\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Linker\MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;E:\Codes\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;E:\Codes\share\cmake-4.2\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Codes/discord bot(Leo)/opus-1.5.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\Codes\bin\cmake.exe "-SE:/Codes/discord bot(Leo)/opus-1.5.2" "-BE:/Codes/discord bot(Leo)/opus-1.5.2/build" --check-stamp-file "E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeCCompiler.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeRCCompiler.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\4.2.1\CMakeSystem.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\CFeatureCheck.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusBuildtype.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusConfig.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusConfig.cmake.in;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusFunctions.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusPackageVersion.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\OpusSources.cmake;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\config.h.cmake.in;E:\Codes\discord bot(Leo)\opus-1.5.2\cmake\vla.c;E:\Codes\discord bot(Leo)\opus-1.5.2\opus.pc.in;E:\Codes\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeCCompiler.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeCCompilerABI.c;E:\Codes\share\cmake-4.2\Modules\CMakeCInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDependentOption.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;E:\Codes\share\cmake-4.2\Modules\CMakePushCheckState.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeRCInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeSystem.cmake.in;E:\Codes\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;E:\Codes\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CPack.cmake;E:\Codes\share\cmake-4.2\Modules\CPackComponent.cmake;E:\Codes\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;E:\Codes\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;E:\Codes\share\cmake-4.2\Modules\CheckIncludeFile.cmake;E:\Codes\share\cmake-4.2\Modules\CheckLibraryExists.cmake;E:\Codes\share\cmake-4.2\Modules\CheckSymbolExists.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Codes\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;E:\Codes\share\cmake-4.2\Modules\FeatureSummary.cmake;E:\Codes\share\cmake-4.2\Modules\FindGit.cmake;E:\Codes\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;E:\Codes\share\cmake-4.2\Modules\FindPackageMessage.cmake;E:\Codes\share\cmake-4.2\Modules\GNUInstallDirs.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CMakeInspectCLinker.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;E:\Codes\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;E:\Codes\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Linker\MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\Windows.cmake;E:\Codes\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;E:\Codes\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;E:\Codes\share\cmake-4.2\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\include\opus.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\include\opus_multistream.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\include\opus_projection.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus_private.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\analysis.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\mapping_matrix.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\mlp.h" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus_decoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus_encoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\extensions.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus_multistream.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus_multistream_encoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus_multistream_decoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\repacketizer.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus_projection_encoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\opus_projection_decoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\mapping_matrix.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\analysis.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\mlp.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\src\mlp_data.c" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\include\opus_defines.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\include\opus_types.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\debug.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\control.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\errors.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\API.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\typedef.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\define.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\main.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\x86\main_sse.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\PLC.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\structs.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tables.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tuning_parameters.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\Inlines.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\MacroCount.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\MacroDebug.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\macros.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NSQ.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\pitch_est_defines.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_private.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_rom.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_structs.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\SigProc_FIX.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\x86\SigProc_FIX_sse.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\biquad_alt_arm.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\LPC_inv_pred_gain_arm.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\macros_armv4.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\macros_armv5e.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\macros_arm64.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\SigProc_FIX_armv4.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\SigProc_FIX_armv5e.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\NSQ_del_dec_arm.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\arm\NSQ_neon.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\fixed\main_FIX.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\fixed\structs_FIX.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\fixed\arm\warped_autocorrelation_FIX_arm.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\fixed\mips\noise_shape_analysis_FIX_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\fixed\mips\warped_autocorrelation_FIX_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\main_FLP.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\structs_FLP.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\SigProc_FLP.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\mips\macros_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\mips\NSQ_del_dec_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\mips\sigproc_fix_mipsr1.h" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\CNG.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\code_signs.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\init_decoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\decode_core.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\decode_frame.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\decode_parameters.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\decode_indices.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\decode_pulses.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\decoder_set_fs.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\dec_API.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\enc_API.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\encode_indices.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\encode_pulses.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\gain_quant.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\interpolate.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\LP_variable_cutoff.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NLSF_decode.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NSQ.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NSQ_del_dec.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\PLC.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\shell_coder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tables_gain.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tables_LTP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tables_NLSF_CB_NB_MB.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tables_NLSF_CB_WB.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tables_other.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tables_pitch_lag.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\tables_pulses_per_block.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\VAD.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\control_audio_bandwidth.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\quant_LTP_gains.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\VQ_WMat_EC.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\HP_variable_cutoff.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NLSF_encode.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NLSF_VQ.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NLSF_unpack.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NLSF_del_dec_quant.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\process_NLSFs.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\stereo_LR_to_MS.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\stereo_MS_to_LR.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\check_control_input.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\control_SNR.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\init_encoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\control_codec.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\A2NLSF.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\ana_filt_bank_1.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\biquad_alt.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\bwexpander_32.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\bwexpander.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\debug.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\decode_pitch.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\inner_prod_aligned.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\lin2log.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\log2lin.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\LPC_analysis_filter.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\LPC_inv_pred_gain.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\table_LSF_cos.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NLSF2A.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NLSF_stabilize.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\NLSF_VQ_weights_laroia.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\pitch_est_tables.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_down2_3.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_down2.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_private_AR2.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_private_down_FIR.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_private_IIR_FIR.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_private_up2_HQ.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\resampler_rom.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\sigm_Q15.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\sort.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\sum_sqr_shift.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\stereo_decode_pred.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\stereo_encode_pred.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\stereo_find_predictor.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\stereo_quant_pred.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\LPC_fit.c" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arch.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\bands.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\celt.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\cpu_support.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\include\opus_custom.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\cwrs.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\ecintrin.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\entcode.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\entdec.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\entenc.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\fixed_debug.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\fixed_generic.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\float_cast.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\_kiss_fft_guts.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\kiss_fft.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\laplace.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mathops.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mdct.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mfrngcod.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\modes.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\os_support.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\pitch.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\celt_lpc.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\celt_lpc_sse.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\quant_bands.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\rate.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\stack_alloc.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\vq.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\static_modes_float.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\static_modes_fixed.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\static_modes_float_arm_ne10.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\static_modes_fixed_arm_ne10.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\armcpu.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\fixed_armv4.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\fixed_armv5e.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\fixed_arm64.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\kiss_fft_armv4.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\kiss_fft_armv5e.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\pitch_arm.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\fft_arm.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\arm\mdct_arm.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mips\celt_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mips\fixed_generic_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mips\kiss_fft_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mips\mdct_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mips\pitch_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mips\vq_mipsr1.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\pitch_sse.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\vq_sse.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\x86_arch_macros.h" />
+    <ClInclude Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\x86cpu.h" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\bands.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\celt.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\celt_encoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\celt_decoder.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\cwrs.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\entcode.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\entdec.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\entenc.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\kiss_fft.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\laplace.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mathops.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\mdct.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\modes.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\pitch.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\celt_lpc.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\quant_bands.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\rate.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\vq.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\apply_sine_window_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\corrMatrix_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\encode_frame_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\find_LPC_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\find_LTP_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\find_pitch_lags_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\find_pred_coefs_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\LPC_analysis_filter_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\LTP_analysis_filter_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\LTP_scale_ctrl_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\noise_shape_analysis_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\process_gains_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\regularize_correlations_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\residual_energy_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\warped_autocorrelation_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\wrappers_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\autocorrelation_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\burg_modified_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\bwexpander_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\energy_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\inner_product_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\k2a_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\LPC_inv_pred_gain_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\pitch_analysis_core_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\scale_copy_vector_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\scale_vector_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\schur_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\sort_FLP.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\x86cpu.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\x86_celt_map.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\x86\x86_silk_map.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\pitch_sse.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\pitch_sse2.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\vq_sse2.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\celt_lpc_sse4_1.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\pitch_sse4_1.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\x86\NSQ_sse4_1.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\x86\NSQ_del_dec_sse4_1.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\x86\VAD_sse4_1.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\x86\VQ_WMat_EC_sse4_1.c" />
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\celt\x86\pitch_avx.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\x86\NSQ_del_dec_avx2.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="E:\Codes\discord bot(Leo)\opus-1.5.2\silk\float\x86\inner_product_FLP_avx2.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="E:\Codes\discord bot(Leo)\opus-1.5.2\build\ZERO_CHECK.vcxproj">
+      <Project>{EA0605E8-A60F-3F26-968C-BC75F4921233}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
