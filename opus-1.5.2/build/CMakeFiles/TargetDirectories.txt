@@ -1,5 +1,0 @@
-E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/opus.dir
-E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/PACKAGE.dir
-E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/INSTALL.dir
-E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/ALL_BUILD.dir
-E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/ZERO_CHECK.dir
