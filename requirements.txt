@@ -1,0 +1,12 @@
+discord.py
+python-dotenv
+yt-dlp
+google-generativeai
+gTTS
+openai-whisper
+langdetect
+feedparser
+requests
+TikTokLive
+PyNaCl
+ffmpeg-python

@@ -1,0 +1,126 @@
+# CMake generation dependency list for this directory.
+E:/Codes/discord bot(Leo)/opus-1.5.2/CMakeLists.txt
+E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/4.2.1/CMakeCCompiler.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/4.2.1/CMakeRCCompiler.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/build/CMakeFiles/4.2.1/CMakeSystem.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/CFeatureCheck.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/OpusBuildtype.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/OpusConfig.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/OpusConfig.cmake.in
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/OpusFunctions.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/OpusPackageVersion.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/OpusSources.cmake
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/config.h.cmake.in
+E:/Codes/discord bot(Leo)/opus-1.5.2/cmake/vla.c
+E:/Codes/discord bot(Leo)/opus-1.5.2/opus.pc.in
+E:/Codes/share/cmake-4.2/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+E:/Codes/share/cmake-4.2/Modules/CMakeCCompiler.cmake.in
+E:/Codes/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+E:/Codes/share/cmake-4.2/Modules/CMakeCInformation.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeDependentOption.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeGenericSystem.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakePushCheckState.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeRCCompiler.cmake.in
+E:/Codes/share/cmake-4.2/Modules/CMakeRCInformation.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeSystem.cmake.in
+E:/Codes/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake
+E:/Codes/share/cmake-4.2/Modules/CMakeTestRCCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/CPack.cmake
+E:/Codes/share/cmake-4.2/Modules/CPackComponent.cmake
+E:/Codes/share/cmake-4.2/Modules/CheckCCompilerFlag.cmake
+E:/Codes/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake
+E:/Codes/share/cmake-4.2/Modules/CheckIncludeFile.cmake
+E:/Codes/share/cmake-4.2/Modules/CheckLibraryExists.cmake
+E:/Codes/share/cmake-4.2/Modules/CheckSymbolExists.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Bruce-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Compaq-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/GNU-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/HP-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/LCC-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/MSVC-C.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/MSVC.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/SDCC-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/SunPro-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/XL-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/XLClang-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/Compiler/zOS-C-DetermineCompiler.cmake
+E:/Codes/share/cmake-4.2/Modules/CompilerId/VS-10.vcxproj.in
+E:/Codes/share/cmake-4.2/Modules/FeatureSummary.cmake
+E:/Codes/share/cmake-4.2/Modules/FindGit.cmake
+E:/Codes/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+E:/Codes/share/cmake-4.2/Modules/FindPackageMessage.cmake
+E:/Codes/share/cmake-4.2/Modules/GNUInstallDirs.cmake
+E:/Codes/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake
+E:/Codes/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake
+E:/Codes/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake
+E:/Codes/share/cmake-4.2/Modules/Internal/CMakeInspectCLinker.cmake
+E:/Codes/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake
+E:/Codes/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake
+E:/Codes/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake
+E:/Codes/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake
+E:/Codes/share/cmake-4.2/Modules/Linker/MSVC-C.cmake
+E:/Codes/share/cmake-4.2/Modules/Linker/MSVC.cmake
+E:/Codes/share/cmake-4.2/Modules/Platform/Linker/Windows-MSVC-C.cmake
+E:/Codes/share/cmake-4.2/Modules/Platform/Linker/Windows-MSVC.cmake
+E:/Codes/share/cmake-4.2/Modules/Platform/Windows-Initialize.cmake
+E:/Codes/share/cmake-4.2/Modules/Platform/Windows-MSVC-C.cmake
+E:/Codes/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake
+E:/Codes/share/cmake-4.2/Modules/Platform/Windows.cmake
+E:/Codes/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake
+E:/Codes/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake
+E:/Codes/share/cmake-4.2/Templates/CPackConfig.cmake.in

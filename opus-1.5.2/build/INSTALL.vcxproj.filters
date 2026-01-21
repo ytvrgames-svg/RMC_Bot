@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Codes\discord bot(Leo)\opus-1.5.2\build\CMakeFiles\a48d239d39ed339072f372f89610b6f5\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3AD5FAE1-C035-3200-8EFB-8865464134B6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
