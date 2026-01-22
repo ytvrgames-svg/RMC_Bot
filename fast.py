@@ -43,7 +43,7 @@ async def tiktok_live_check():
     if live and not live_announced:
         await channel.send(
              f"🌟 Sziasztok! @everyone! 🌟\n"
-            f"Gyere és csatlakozz hozzánk, nézzük együtt a streamet! 💖🎉\n"
+            f"Gyere és csatlakozz hozzám, nézzük együtt a streamet! 💖🎉\n"
             f"👉 https://www.tiktok.com/@{TIKTOK_USERNAME}/live"
         )
         live_announced = True
