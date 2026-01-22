@@ -8,9 +8,10 @@ from dotenv import load_dotenv
 # ENV betöltése
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
-GUILD_ID = int(os.getenv("GUILD_ID"))
-ANNOUNCE_CHANNEL_ID = int(os.getenv("ANNOUNCE_CHANNEL_ID"))
+GUILD_ID = 957684316341670018  # már fix szám
 TIKTOK_USERNAME = os.getenv("TIKTOK_USERNAME")
+ANNOUNCE_CHANNEL_ID = int(os.getenv("ANNOUNCE_CHANNEL_ID"))
+
 
 # ----------------------
 intents = discord.Intents.default()
