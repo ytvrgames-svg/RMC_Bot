@@ -14,7 +14,8 @@ import discord
 from TikTokLive.events import ConnectEvent, LiveEndEvent
 from discord import app_commands, FFmpegPCMAudio
 from discord.ext import tasks
-from discord.ext import commands, voice_recv
+from discord.ext import commands
+from discord.ext.voice_recv import VoiceRecvClient
 import sys
 import traceback
 from dotenv import load_dotenv
@@ -74,6 +75,8 @@ try:
 except Exception:
     traceback.print_exc()
     sys.exit(1)
+
+
 
 # Gemini AI
 # API_KEYS = [os.getenv("GEMINI_API_KEY"), os.getenv("GEMINI_API_KEY_2")]
@@ -173,6 +176,13 @@ class MyClient(discord.Client):
         print("Slash parancsok szinkronizálva")
 
 client = MyClient()
+
+@client.event
+async def on_ready():
+    print(f"Bejelentkezve mint {client.user}")
+    await client.tree.sync()
+    # check_new_video.start()
+    tiktok_live_check.start()
 
 # ----------------------
 # TTS lejátszás voice-ban
@@ -359,12 +369,7 @@ client = MyClient()
 #                 if channel:
 #                     await channel.send(f"📢 Új videó: {latest.title}\n{latest.link}")
 
-@client.event
-async def on_ready():
-    print(f"Bejelentkezve mint {client.user}")
-    await client.tree.sync()
-    # check_new_video.start()
-    tiktok_live_check.start()
+
 
 # ----------------------
 # @client.tree.command(
@@ -431,9 +436,9 @@ async def tiktok_live_check():
 
     if live and not live_announced:
         await channel.send(
-            f"🔴 **LIVE MOST!**\n"
-            f"@everyone gyertek be 👇\n"
-            f"https://www.tiktok.com/@{TIKTOK_USERNAME}/live"
+            f"🌟 Sziasztok! @everyone! 🌟\n"
+            f"Gyere és csatlakozz hozzánk, nézzük együtt a streamet! 💖🎉\n"
+            f"👉 https://www.tiktok.com/@{TIKTOK_USERNAME}/live"
         )
         live_announced = True
 
