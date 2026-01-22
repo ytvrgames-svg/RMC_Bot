@@ -12,6 +12,10 @@ GUILD_ID = int(os.getenv("GUILD_ID"))
 ANNOUNCE_CHANNEL_ID = int(os.getenv("ANNOUNCE_CHANNEL_ID"))
 TIKTOK_USERNAME = os.getenv("TIKTOK_USERNAME")
 
+if not TOKEN or not GUILD_ID or not ANNOUNCE_CHANNEL_ID or not TIKTOK_USERNAME:
+    raise ValueError("Hiányzó környezeti változó! Ellenőrizd a .env fájlodat vagy a hardcoded értékeket.")
+
+
 
 # ----------------------
 intents = discord.Intents.default()
