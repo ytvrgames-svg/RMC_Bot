@@ -4,6 +4,9 @@ from discord.ext import tasks
 from dotenv import load_dotenv
 import requests
 
+
+load_dotenv("/home/ubuntu/RMC_Bot/.env")
+
 # Bot setup
 intents = discord.Intents.default()
 intents.message_content = True
