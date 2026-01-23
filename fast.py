@@ -66,3 +66,6 @@ async def on_ready():
     print(f"Bejelentkezve mint {bot.user}")
     if not tiktok_live_check.is_running():
         tiktok_live_check.start()
+
+# ----------------------
+bot.run(os.getenv("DISCORD_TOKEN"))
