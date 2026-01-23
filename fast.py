@@ -1,5 +1,8 @@
-import discord
+import os
+import discord          # ← ez kell, különben NameError
 from discord.ext import tasks
+from dotenv import load_dotenv
+import requests
 
 # Bot setup
 intents = discord.Intents.default()
