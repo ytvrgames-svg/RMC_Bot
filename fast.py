@@ -1,12 +1,11 @@
 import os
-import discord          # ← ez kell, különben NameError
+import discord
 from discord.ext import tasks
 from dotenv import load_dotenv
-import requests
-from tiktok import is_tiktok_live
+from TikTokApi import TikTokApi
 
-
-
+# ----------------------
+# Környezeti változók betöltése
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
@@ -17,6 +16,7 @@ TIKTOK_USERNAME = os.getenv("TIKTOK_USERNAME")
 if not TOKEN or not GUILD_ID or not ANNOUNCE_CHANNEL_ID or not TIKTOK_USERNAME:
     raise ValueError("Hiányzó környezeti változó! Ellenőrizd a .env fájlodat.")
 
+# ----------------------
 # Bot setup
 intents = discord.Intents.default()
 intents.message_content = True
@@ -31,24 +31,56 @@ first_check = True
 ALLOWED_USER_ID = 769266438115950613
 
 # ----------------------
-# TikTok live check
+# Helper log függvény
+def log_event(msg):
+    print(msg)
+
+# Dummy AI kérés (helyettesíthető a saját ask_ai függvényeddel)
+async def ask_ai(user_text: str) -> str:
+    return f"AI válasz: {user_text[::-1]}"  # csak példa, visszafordítja a szöveget
+
+# ----------------------
+# TikTok live check függvény
+async def is_tiktok_live(username: str) -> bool:
+    async with TikTokApi() as api:
+        try:
+            user = await api.user(username)
+            return user.live_status
+        except Exception as e:
+            log_event(f"TikTok lekérés hiba: {e}")
+            return False
+
+# ----------------------
+# TikTok live check loop
 @tasks.loop(seconds=60)
 async def tiktok_live_check():
     global live_announced, first_check
+
     channel = bot.get_channel(ANNOUNCE_CHANNEL_ID)
+    if not channel:
+        guild = bot.get_guild(GUILD_ID)
+        if guild:
+            channel = guild.get_channel(ANNOUNCE_CHANNEL_ID)
     if not channel:
         return
 
-    live = await is_tiktok_live(TIKTOK_USERNAME)
+    try:
+        live = await is_tiktok_live(TIKTOK_USERNAME)
+    except Exception as e:
+        log_event(f"Hiba a TikTok lekérés közben: {e}")
+        return
 
-    # Első futás: csak állapot beállítása
     if first_check:
         live_announced = live
         first_check = False
         return
 
     if live and not live_announced:
-        await channel.send(f"🌟 @everyone {TIKTOK_USERNAME} most LIVE! 👉 https://www.tiktok.com/@{TIKTOK_USERNAME}/live")
+        await channel.send(
+            f"🌟 Sziasztok! @everyone! 🌟\n"
+            f"Gyere és csatlakozz hozzám, nézzük együtt a streamet! 💖🎉\n"
+            f"👉 https://www.tiktok.com/@{TIKTOK_USERNAME}/live"
+        )
         live_announced = True
 
     if not live:
@@ -81,4 +113,4 @@ async def on_ready():
         tiktok_live_check.start()
 
 # ----------------------
-bot.run(os.getenv("DISCORD_TOKEN"))
+bot.run(TOKEN)
