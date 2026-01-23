@@ -5,7 +5,15 @@ from dotenv import load_dotenv
 import requests
 
 
-load_dotenv("/home/ubuntu/RMC_Bot/.env")
+load_dotenv()
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+GUILD_ID = int(os.getenv("GUILD_ID"))
+ANNOUNCE_CHANNEL_ID = int(os.getenv("ANNOUNCE_CHANNEL_ID"))
+TIKTOK_USERNAME = os.getenv("TIKTOK_USERNAME")
+
+if not TOKEN or not GUILD_ID or not ANNOUNCE_CHANNEL_ID or not TIKTOK_USERNAME:
+    raise ValueError("Hiányzó környezeti változó! Ellenőrizd a .env fájlodat.")
 
 # Bot setup
 intents = discord.Intents.default()
