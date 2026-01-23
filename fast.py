@@ -1,3 +1,6 @@
+import discord
+from discord.ext import tasks
+
 # Bot setup
 intents = discord.Intents.default()
 intents.message_content = True
