@@ -3,6 +3,8 @@ import discord          # ← ez kell, különben NameError
 from discord.ext import tasks
 from dotenv import load_dotenv
 import requests
+from tiktok import is_tiktok_live
+
 
 
 load_dotenv()
